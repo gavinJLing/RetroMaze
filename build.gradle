@@ -1,0 +1,27 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+group = 'uk.gov.dwp'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+//springBoot {
+//    mainClassName = 'uk.gov.dwp.maze.Explorer'
+//}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	implementation 'org.apache.commons:commons-lang3:3.5'
+    
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
+	
+}
